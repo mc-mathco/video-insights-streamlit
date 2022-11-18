@@ -10,15 +10,7 @@ from sentence_transformers import SentenceTransformer
 from umap import UMAP
 from bertopic import BERTopic
 from sklearn.feature_extraction.text import CountVectorizer
-import spacy
-nlp_model = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
-stopwords = nlp_model.Defaults.stop_words
-additional_stopwords = [
-    "skin", "skincare"
-]
-for word in additional_stopwords: stopwords.add(word)
 from keybert import KeyBERT
-import matplotlib.pyplot as plt
 #--------------------------------------------------
 # Data:
 df_huda = pd.read_csv("data/whisper_huda_clean.csv")
