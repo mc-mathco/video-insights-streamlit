@@ -9,6 +9,5 @@ bertopic==0.12.0
 sklearn==1.1.1
 spacy==3.4.0
 pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1-py3-none-any.whl
-nlp_model = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
 keybert==0.6.0
 matplotlib==3.5.1
